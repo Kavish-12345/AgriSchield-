@@ -64,7 +64,7 @@ export const MOCK_USDC_ABI = [
 
 // Contract addresses - Your deployed contracts
 export const CONTRACT_ADDRESSES = {
-  logic: "0x01554ef8c24889714143cc12df95d7370c462ad8",  // Your Logic contract
+  logic: "0xcb537f688feed171e9eb69544f6111dcda790116",  // Your Logic contract
   usdc: "0x95d59ecb48d56fc7befa62a19482d052193560a4"   // Your MockUSDC contract
 };
 
