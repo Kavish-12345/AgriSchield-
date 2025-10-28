@@ -1,168 +1,96 @@
-AgriSchield
+## AgriSchield 🌾
 
-A React + Vite frontend for AgriSchield — (replace this sentence with a short project description).
-Example: AgriSchield helps farmers monitor crop health, get pest alerts and field recommendations.
+AgriSchield is an intelligent agricultural monitoring and management platform built using Next.js.
+It aims to empower farmers and agricultural organizations with tools for crop health analysis, weather insights, and predictive recommendations for improved yield and sustainability.
 
-Table of contents
+Getting Started 🚀
 
-Demo / Screenshots
-
-Features
-
-Tech stack
-
-Getting started
-
-Prerequisites
-
-Install
-
-Environment variables
-
-Available scripts
-
-Project structure
-
-Development tips
-
-Build & Deploy
-
-Contributing
-
-License
-
-Contact
-
-TODO / Notes for repo owner
-
-Demo / Screenshots
-
-Add screenshots or a link to a deployed demo here once available.
-
-Features
-
-(Replace these with what your app actually does)
-
-Responsive React UI built with Vite for fast HMR and builds.
-
-Component-driven architecture.
-
-Linting and basic ESLint config.
-
-Ready for integration with backend APIs (REST / GraphQL).
-
-Example pages/components in src/ (replace/expand as needed).
-
-Tech stack
-
-React (v18+)
-
-Vite
-
-JavaScript (ESNext)
-
-ESLint
-
-(Add other libs / frameworks your project uses: Tailwind, Chakra, Redux, Axios, etc.)
-
-Getting started
-Prerequisites
-
-Node.js (v16+ recommended)
-
-npm (v8+) or yarn/pnpm
-
-Install
-
-Clone the repo and install dependencies:
-
-git clone https://github.com/Kavish-12345/AgriSchield-.git
-cd AgriSchield-
-npm install
-# or
-# yarn
-# pnpm install
-
-Environment variables
-
-If your app uses env variables, create a .env file in the project root. Example:
-
-VITE_API_BASE_URL=https://api.example.com
-VITE_MAPS_API_KEY=your_key_here
-
-
-Prefix client-side variables with VITE_ so Vite exposes them.
-
-Available scripts
-
-Common scripts for a Vite + React project — use npm run <script>:
-
-# Start development server (hot reload)
+First, run the development server:
+```bash
 npm run dev
+
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+## Features 🌱
+
+🌤️ Real-time weather data integration
+
+🧠 AI-based crop health monitoring (add details when integrated)
+
+💧 Soil and water analytics dashboard
+
+📊 Visual insights using charts and graphs
+
+🔔 Alerts & notifications for farmers and field workers
+
+🌐 Fully responsive UI with modern design
+
+## Tech Stack ⚙️
+
+Next.js
+ — React framework for server-side rendering
+
+TypeScript
+ — Strong typing for scalable code
+
+Tailwind CSS
+ — Utility-first CSS for rapid UI styling
+
+Vercel
+ — Deployment and hosting platform
+
+(Add any APIs or AI models you’re using)
+
+
+## Scripts 📜
+
+You can use the following commands in the terminal:
+```
+# Run development server
+npm run dev
+
 # Build production bundle
 npm run build
-# Preview production build locally
-npm run preview
-# Run linter (if configured)
+
+# Start production server
+npm start
+
+# Lint code for style and errors
 npm run lint
-# Run tests (if configured)
-npm run test
+```
+## Environment Variables 🔑
+
+If your project uses APIs or third-party integrations, create a .env.local file in the root directory.
+
+Example:
+
+NEXT_PUBLIC_API_URL=https://api.example.com
+NEXT_PUBLIC_WEATHER_KEY=your_api_key_here
 
 
-If your package.json has different script names, replace accordingly. (I saw a package.json at repo root — adjust these to match your file.)
+Use the prefix NEXT_PUBLIC_ for all environment variables you want exposed to the frontend.
 
-Project structure
+## Learn More 📘
 
-A suggested/likely structure (update to match src/):
+To learn more about the core framework, check out:
 
-/
-├─ index.html
-├─ package.json
-├─ vite.config.js
-├─ src/
-│  ├─ main.jsx
-│  ├─ App.jsx
-│  ├─ assets/
-│  ├─ components/
-│  │  └─ Button.jsx
-│  ├─ pages/
-│  │  └─ Home.jsx
-│  ├─ hooks/
-│  └─ styles/
-├─ .gitignore
-└─ README.md
+Next.js Documentation
+ — learn about features and APIs
 
-Development tips
+Learn Next.js
+ — an interactive tutorial for beginners
 
-Keep components small and presentational/stateful separation clear.
+Tailwind CSS Docs
+ — for styling utilities
 
-Use src/components for reusable UI and src/pages for route-level components.
-
-Use environment variables for external API keys and do not commit secrets.
-
-Add husky + lint-staged to enforce formatting/lint rules before commits.
-
-If adding TypeScript later: consider vite + react-ts template and migrate gradually.
-
-Build & Deploy
-
-Build the production bundle:
-
-npm run build
-
-
-Deploy the dist/ folder to any static host (Netlify, Vercel, GitHub Pages, Surge). Example (Vercel): push to GitHub and connect the repo in Vercel dashboard — Vercel detects Vite automatically.
-
-Contributing
-
-Contributions welcome!
-
-Fork the repository
-
-Create a branch: git checkout -b feature/your-feature
-
-Commit changes: git commit -m "Add <feature>"
-
-Push and open a Pull Request
-
-Add a CONTRIBUTING.md if you want stricter guidelines.
+You can also check out the Next.js GitHub repository
+ for updates and contributions.
